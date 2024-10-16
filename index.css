@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    list-style: none;
+    background: #fff8e1;
+    color: #333;
+}
+
+header {
+    height: auto; 
+    background: #ff9800;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px; 
+    flex-wrap: wrap; 
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: 0; 
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; 
+}
+
+.menu li {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.galeria {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.titulo {
+    font-size: 36px; /* Tamanho da fonte */
+    position: relative; /* Necessário para o efeito de queda */
+    animation: fallIn 0.5s forwards; /* Adiciona a animação ao carregar */
+    opacity: 0; /* Inicia invisível */
+}
+
+@keyframes fallIn {
+    0% {
+        transform: translateX(-100%); /* Começa à esquerda */
+        opacity: 0; /* Começa invisível */
+    }
+    100% {
+        transform: translateX(0); /* Termina na posição original */
+        opacity: 1; /* Fica visível */
+    }
+}
+
+.titulo:hover {
+    color: #ffc107; /* Cor ao passar o mouse */
+}
+
+.container {
+    max-width: 935px; 
+    height: auto; 
+    margin: 20px auto; 
+}
+
+.container img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .menu li {
+        font-size: 24px; /* Reduz o tamanho da fonte */
+        margin: 5px 0; /* Adiciona margens verticais */
+    }
+
+    .titulo {
+        font-size: 28px; /* Reduz o tamanho da fonte do título */
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    background: #fff8e1;
+    color: #333;
+}
+
+header {
+    background: #ff9800;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    font-size: 36px; /* Tamanho da fonte */
+    position: relative; /* Necessário para o efeito de queda */
+    animation: fallIn 0.5s forwards; /* Animação ao carregar */
+    opacity: 0; /* Inicia invisível */
+}
+
+@keyframes fallIn {
+    0% {
+        transform: translateX(-100%); /* Começa à esquerda */
+        opacity: 0; /* Começa invisível */
+    }
+    100% {
+        transform: translateX(0); /* Termina na posição original */
+        opacity: 1; /* Fica visível */
+    }
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    gap: 16px; 
+}
+
+.menu li {
+    font-size: 28px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white; /* Cor dos links */
+}
+
+.menu a:hover {
+    color: #ffc107; /* Cor ao passar o mouse */
+}
+
+.container {
+    max-width: 935px; 
+    margin: 20px auto; 
+    text-align: center; /* Centraliza o texto e a imagem */
+}
+
+.container img {
+    width: 100%;
+    height: auto; 
+    display: inline-block; /* Permite a centralização */
+    margin: 0 auto; /* Centraliza a imagem no contêiner */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .menu li {
+        font-size: 24px; /* Reduz o tamanho da fonte */
+        margin: 5px 0; /* Adiciona margens verticais */
+    }
+
+    .titulo {
+        font-size: 28px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .container {
+        padding: 0 10px; /* Adiciona um pouco de padding lateral em dispositivos menores */
+    }
+}
